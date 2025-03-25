@@ -1,16 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="row">
+    <button id="toggle-theme" class="btn btn-secondary m-3">Dark/Light Mode</button>
+    <div class="row theme-bg text-theme">
         <div class="col-md-12">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2>Departments</h2>
                 <a href="{{ route('departments.create') }}" class="btn btn-primary">Add New Department</a>
             </div>
             
-            <div class="card">
-                <div class="card-body">
-                    <table class="table table-bordered table-striped">
+            <div class="card border-theme shadow-sm">
+                <div class="card-body theme-bg text-theme">
+                    <table class="table table-bordered table-striped text-theme">
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -48,4 +49,7 @@
             </div>
         </div>
     </div>
+
+    
+
 @endsection

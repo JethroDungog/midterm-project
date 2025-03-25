@@ -1,16 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="row">
+    <button id="toggle-theme" class="btn btn-secondary m-3">Dark/Light Mode</button>
+    <div class="row theme-bg text-theme">
         <div class="col-md-8 mx-auto">
-            <div class="card">
-                <div class="card-header">
+            <div class="card border-theme shadow-sm">
+                <div class="card-header theme-bg text-theme">
                     <h4>Department Details</h4>
                 </div>
-                <div class="card-body">
-                    <table class="table">
+                <div class="card-body theme-bg text-theme">
+                    <table class="table text-theme">
                         <tr>
-                            <th style="width: 150px;">Department ID:</th>
+                            <th>Department ID:</th>
                             <td>{{ $department->DepartmentID }}</td>
                         </tr>
                         <tr>
@@ -24,7 +25,7 @@
                         <tr>
                             <th>College:</th>
                             <td>
-                                <a href="{{ route('colleges.show', $department->CollegeID) }}">
+                                <a href="{{ route('colleges.show', $department->CollegeID) }}" class="text-theme">
                                     {{ $department->college->CollegeName }} ({{ $department->college->CollegeCode }})
                                 </a>
                             </td>
@@ -43,4 +44,7 @@
             </div>
         </div>
     </div>
+
+    
+
 @endsection
