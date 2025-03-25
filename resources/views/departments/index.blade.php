@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <button id="toggle-theme" class="btn btn-secondary m-3"></button>
+    <button id="toggle-theme" class="btn btn-secondary m-3">Dark/Light Mode</button>
     <div class="row theme-bg text-theme">
         <div class="col-md-12">
             <div class="d-flex justify-content-between align-items-center mb-4">

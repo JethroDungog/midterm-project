@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <button id="toggle-theme" class="btn btn-secondary m-3"></button>
+    <button id="toggle-theme" class="btn btn-secondary m-3">Dark/Light Mode</button>
     <div class="row theme-bg text-theme">
         <div class="col-md-8 mx-auto">
             <div class="card border-theme shadow-sm">
