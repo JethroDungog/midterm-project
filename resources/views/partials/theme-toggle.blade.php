@@ -1,4 +1,4 @@
-
+<button id="toggle-theme" class="btn btn-secondary m-3">Toggle Dark/Light Mode</button>
 
 <script>
     document.getElementById('toggle-theme').addEventListener('click', function() {
