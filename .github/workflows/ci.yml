@@ -24,7 +24,7 @@ jobs:
           php-version: '8.1'
 
       - name: Install dependencies
-        run: composer install --no-progress --no-suggest --prefer-dist
+        run: composer install --no-interaction --prefer-dist
 
       - name: Run PHPUnit
         run: vendor/bin/phpunit --configuration phpunit.xml
