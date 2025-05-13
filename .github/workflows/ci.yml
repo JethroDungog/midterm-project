@@ -3,9 +3,11 @@ name: CI
 # Run on pushes and PRs to your default branch
 on:
   push:
-    branches: [ ${{ github.event.repository.default_branch }} ]
+    branches:
+      - Kian          # ← runs when you push to the Kian branch :contentReference[oaicite:2]{index=2}
   pull_request:
-    branches: [ ${{ github.event.repository.default_branch }} ]
+    branches:
+      - Kian          # ← runs for PRs targeting Kian :contentReference[oaicite:3]{index=3}
 
 
 jobs:
