@@ -11,5 +11,7 @@
             "email": "fratzkian@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.28"
+    }
 }
